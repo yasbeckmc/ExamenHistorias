@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  
+  <div class="navbar">
+    <div class="logo">FACEBOOK</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+    </div>
+    <img src="images/perfil.png" alt="Avatar" width="40" height="40">
+
+    <div class="menu">
+      <ul>
+        <li>Inicio</li>
+        <li>Amigos</li>
+        <li>Mensajes</li>
+        <li>Notificaciones</li>
+        <li>Perfil</li>
+      </ul>
+      <button id="cerrarSesionBtn" onclick="cerrarSesion()">Cerrar sesión</button>
+      <span>BIENVENIDO : <span id="nombreUsuario"></span></span>
+    </div>
+  </div>
+
+  <div class="stories-container">
+    <div class="content">
+      <div class="previous-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </div>
+
+      <div class="stories"></div>
+
+      <div class="next-btn active">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="stories-full-view">
+    <div class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+    <div class="reactions">
+      <button class="reaction" onclick="react('like')">👍</button>
+      <button class="reaction" onclick="react('love')">❤️</button>
+      <button class="reaction" onclick="react('haha')">😄</button>  
+      <!-- Add more reaction buttons as needed -->
+    </div>
+
+    <div class="reactions-section">
+      <!-- Reaction counts will be displayed here -->
+    </div>
+
+    <div class="content">
+      <div class="previous-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </div> 
+
+      <div class="story">
+        <img src="images/3.jpg" alt="" />
+        <div class="author">Author</div>
+      </div>
+
+      <div class="next-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Dirección: 123 Calle Principal, Ciudad</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

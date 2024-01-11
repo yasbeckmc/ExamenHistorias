@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Correo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Nuevo Correo</h1>
+    <form id="emailForm">
+        <label for="sender">Remitente:</label>
+        <input type="text" id="sender" required><br>
+        
+        <label for="recipient">Destinatario:</label>
+        <input type="text" id="recipient" required><br>
+        
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" required><br>
+        
+        <label for="body">Cuerpo:</label><br>
+        <textarea id="body" rows="4" cols="50" required></textarea><br>
+        
+        <label for="attachment">Adjuntar Imagen:</label>
+        <input type="file" id="attachment"><br>
+        
+        <button type="button" onclick="guardarCorreo()">Guardar</button>
+        <button type="button" onclick="volver()">Volver</button>
+        
+    </form>
+
+    <script src="guardarCorreo.js"></script>
+</body>
+</html>
