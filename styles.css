@@ -2,6 +2,7 @@ body {
     background: #e2f1ed;
 }
 
+
 .stories-container {
     max-width: 600px;
     margin: 24px auto;
@@ -241,12 +242,16 @@ body {
     text-decoration: underline;
 }
 
+
+
+
 .reactions {
     display: flex;
     gap: 10px;
     margin-top: 10px;
   }
   
+
   .reaction-btn {
     background-color: #4267B2;
     color: white;
@@ -255,3 +260,39 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  .comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comments-list li {
+    margin-bottom: 8px;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-btn {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
